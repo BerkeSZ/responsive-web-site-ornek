@@ -1,0 +1,160 @@
+@media screen and (min-width:800px) {  /*! 800px gelince  fon 9px olur      */
+    html{
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width:1200px) {   /*! 1200px gelince fotoğraflar yanyana gelir,font 11px olur  footerdaki yazılar yan yana gelir       */
+    html{
+        font-size: 11px;
+    }
+
+    #section-b li {
+        width: 28%;
+        margin: 1%;
+        display: inline-block;
+    }
+
+    .box{
+        width: 50%;
+        float: left;
+    }
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #363434;
+    color: white;
+}   
+
+html{
+    font-size: 10px;
+}
+
+a{
+    text-decoration: none;  /*? LİNKDEKİ ALT ÇİZGİYİ KALDIRIR   */
+}
+
+P{
+    padding: 1.6rem 0; /*? paragrafı alttan ve üstten boşluk bırakır */
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+header{
+    height: 46rem;
+    
+}
+
+.clearfix::after{
+    content:"" ;
+    display: block;
+    clear: both;
+
+}
+
+header .bg-image{
+    position: absolute;
+    background-image: url("../indir.jpg");
+    background-size: cover;
+    background-position:center;
+    height: 46rem;
+    width: 100%;
+    z-index: -1; /*? yazıyı resmin üstüne çıkarttı  */
+}
+
+
+
+header h1{
+    padding: 12rem;
+    padding-bottom: 0;   /*? kenarlarının iç boşluklarını düzenleyebilirsiniz */
+}
+
+.btn{
+    display: inline-block;
+    background-color: #ddd;
+    font-weight: bold;
+    color: black;
+    padding: 1.6rem 3.2rem;
+    border: 1px solid #333 none;
+    margin: .5rem 0;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background-color: #3e8e41;
+  color: white;
+}
+
+#section-a{
+    background-color: white;
+    color: #333;
+    padding: 3.2rem; /*? YAZIYI ÜSTTEN VE ALTTAN AYIRIR */
+
+}
+
+#section-b{
+    padding: 2rem; /*? YAZIYI ÜSTTEN VE ALTTAN AYIRIR */    
+        /*!  rem x 10 = px*/
+}
+
+#section-b ul{
+    list-style: none;
+}
+
+#section-b li{
+    background: white;
+    color: #363434;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.col-content{
+    padding: 1.5rem;
+}
+
+#section-c{
+    background-color: white;
+    color: #333;
+    padding: 5rem; 
+}
+
+#section-d .box{
+    padding: 2rem;
+
+}
+#section-d .box-2{
+    padding: 2rem;
+
+}
+
+#section-d .box:first-child{ 
+    background-color: #3e8e41;     /*? İLK BOX ETİKETİNİ ALIR */
+}
+
+footer{
+    padding: 4rem;
+    background: black;
+}
+
+footer a{
+    list-style: none;
+    color: white;
+}
+
+
+
